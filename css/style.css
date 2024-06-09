@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #111111;
+  --white: #f2f2f2;
+}
+
+/*
+=====================
+Global
+=====================
+*/
+
+html {
+  background-color: var(--white);
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--black);
+  font-family: "Poppins", "Heuvetica", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+p {
+  color: var(--black);
+  font-family: "Roboto";
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto";
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-family: "Roboto";
+  line-height: 1.5;
+}
+
+hr {
+  height: 4px;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(231, 231, 231);
+}
+
+section {
+  margin: 2rem 0;
+}
+
+article {
+  margin: 2rem 0;
+}
+
+/* 
+=====================
+Styles
+=====================
+*/
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 1rem;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header img {
+  width: 50px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0.5rem 0;
+}
+
+header li {
+  font-weight: 400;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    align-items: center;
+  }
+}
+
+/* Main Section */
+
+#main-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 500px;
+}
+
+* {
+  transition: 0.3s ease-in;
+}
+
+#main-sec-posterbox {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+#main-sec-poster-a {
+  width: 500px;
+  height: 500px;
+}
+
+#main-sec-title {
+  width: 400px;
+  padding: 1rem;
+}
+
+#main-sec-title .highlight-a {
+  line-height: 2rem;
+  font-size: 6rem;
+  letter-spacing: -7px;
+}
+
+#main-sec-title .highlight-b {
+  line-height: 2.5rem;
+  font-weight: 200;
+  font-size: 5rem;
+  letter-spacing: 8px;
+}
+
+#main-sec-title p {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 800px) {
+  #main-sec {
+    justify-content: space-between;
+  }
+
+  #main-sec-title {
+    width: 50%;
+  }
+
+  #main-sec-posterbox {
+    width: 320px;
+    overflow: hidden;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+
+  #main-sec-poster-a {
+    transform: translateX(-120px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main-sec {
+    justify-content: space-between;
+  }
+
+  #main-sec-title {
+    width: 50%;
+  }
+
+  #main-sec-title .highlight-a {
+    font-size: 4rem;
+  }
+
+  #main-sec-title .highlight-b {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+  #main-sec-title p {
+    font-size: 1.2rem;
+  }
+
+  #main-sec-posterbox {
+    width: 50%;
+    height: 320px;
+    overflow: hidden;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+
+  #main-sec-poster-a {
+    transform: translateX(-150px);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #main-sec {
+    justify-content: space-between;
+  }
+
+  #main-sec-title {
+    width: 50%;
+  }
+
+  #main-sec-posterbox {
+    width: 30%;
+    overflow: hidden;
+  }
+}
+
+/* Products */
+
+.product {
+  width: 80%;
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #444;
+  position: relative;
+}
+
+.carousel-inner #a {
+    background-image: url("/midia/cnc\ router2.jpg");
+    background-position: bottom -150px right 50%;
+}
+
+.carousel-inner #b {
+    background-image: url("/midia/cnc\ router.jpg");
+    background-position: top 80% right 50%;
+}
+
+.carousel-inner #c {
+    background-image: url("/midia/3dprinter.jpg");
+    background-position: top 60% right 50%;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+.carousel-caption h2, .carousel-caption p {
+    color: white;
+}
+
+.carousel-item #cnc {
+    transform: translateY(-450px);
+}
+
+.carousel-item #laser {
+    transform: translateY(-300px);
+}
+
+.carousel-item #printer {
+    transform: translateY(-300px);
+}
+
+.product h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.product h3 {
+  font-size: 2rem;
+}
+
+.product button {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto 0;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.679);
+  cursor: pointer;
+}
+
+.teste {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product button:hover {
+  background-color: white;
+}
+
+#precisionx .img-box {
+  width: 100%;
+  height: 300px;
+
+  margin: 1.5rem 0;
+
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.488);
+
+  background-image: url("/midia/cnc\ router2.jpg");
+  background-position: top 60% right 50%;
+}
+
+#precisionlaser .img-box {
+  width: 100%;
+  height: 300px;
+
+  margin: 1.5rem 0;
+
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.488);
+
+  background-image: url("/midia/cnc\ router.jpg");
+  background-position: top 60% right 50%;
+}
+
+#axis .img-box {
+  width: 100%;
+  height: 300px;
+
+  margin: 1.5rem 0;
+
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.488);
+
+  background-image: url("/midia/3dprinter.jpg");
+  background-position: top 50% right 50%;
+}
+
+.product .img-box img {
+  width: 100%;
+}
+
+.product li {
+  margin: 1rem 0;
+}
+
+/* About */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+#about button {
+  display: block;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.679);
+  cursor: pointer;
+}
+
+#about button:hover {
+  background-color: white;
+}
+
+#about h3 {
+  margin: 2rem 0 .5rem;
+}
+
+#about li {
+  margin: 0 0 1rem;
+}
+
+/* footer */
+
+footer {
+  background: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer p {
+  color: white;
+}
+
+.footer-section {
+  margin: 0 0 1rem;
+}
+
+.footer-section h2 {
+  margin-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a:hover {
+  color: #ffd700;
+}
+
+.social-links a {
+  margin: 0 5px;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.1s;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
