@@ -261,17 +261,17 @@ header li {
 }
 
 .carousel-inner #a {
-    background-image: url("/midia/cnc\ router2.jpg");
+    background-image: url("midia/cnc\ router2.jpg");
     background-position: bottom -150px right 50%;
 }
 
 .carousel-inner #b {
-    background-image: url("/midia/cnc\ router.jpg");
+    background-image: url("midia/cnc\ router.jpg");
     background-position: top 80% right 50%;
 }
 
 .carousel-inner #c {
-    background-image: url("/midia/3dprinter.jpg");
+    background-image: url("midia/3dprinter.jpg");
     background-position: top 60% right 50%;
 }
 
@@ -342,7 +342,7 @@ header li {
   border-radius: 20px;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.488);
 
-  background-image: url("/midia/cnc\ router2.jpg");
+  background-image: url("midia/cnc\ router2.jpg");
   background-position: top 60% right 50%;
 }
 
@@ -356,7 +356,7 @@ header li {
   border-radius: 20px;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.488);
 
-  background-image: url("/midia/cnc\ router.jpg");
+  background-image: url("midia/cnc\ router.jpg");
   background-position: top 60% right 50%;
 }
 
@@ -370,7 +370,7 @@ header li {
   border-radius: 20px;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.488);
 
-  background-image: url("/midia/3dprinter.jpg");
+  background-image: url("midia/3dprinter.jpg");
   background-position: top 50% right 50%;
 }
 
